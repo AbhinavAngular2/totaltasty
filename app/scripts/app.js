@@ -22,24 +22,20 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
 	  .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        templateUrl: 'views/login.html'
       })
       .when('/registration', {
-        templateUrl: 'views/registration.html',
-        controller: 'RegistrationCtrl'
+        templateUrl: 'views/registration.html'
       })
 	  .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        templateUrl: 'views/contact.html'
       })
       .otherwise({
         redirectTo: '/login'
