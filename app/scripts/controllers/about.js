@@ -10,4 +10,8 @@
 angular.module('csetWebApp')
   .controller('AboutCtrl', function ($scope) {
 $scope.name="Abhinv";
+
+$scope.user = {
+      title: 'Developer',
+    };
   });

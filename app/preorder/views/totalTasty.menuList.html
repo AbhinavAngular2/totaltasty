@@ -1,0 +1,48 @@
+<p>This is the  view.</p>
+{{Data}}
+<md-input-container>
+        <label>Title</label>
+        <input ng-model="user.title">
+</md-input-container>
+
+<div class="container-fluid menu-container">
+ <div class="row">
+	<div class="col-md-4 col-sm-6 food-card" ng-repeat="item in items">
+	   <div class="item-card">
+		  <div class="menu-pic">
+			 <a href="/preorder/item/3SoF8WP9kt">
+			 <!-- <img ng-src="https://tiffinity-parse.s3.amazonaws.com/parse/c51426b183d7ee4f75cad85b5ef638f9_thumbnail.jpeg" lazy-img="https://tiffinity-parse.s3.amazonaws.com/parse/952485e685ba528333303df59a6fcf43_mobile.jpeg" src="https://tiffinity-parse.s3.amazonaws.com/parse/952485e685ba528333303df59a6fcf43_mobile.jpeg"> -->
+			 <img ng-src="images/img1.jpeg">
+			 </a>     
+		  </div>
+		  <div class="card-details">
+			 <div class="row">
+				<div class="col-md-2">
+				   <img height="18" ng-src="assets/images/vegetarian.svg" src="assets/images/vegetarian.svg">
+				</div>
+				<div class="item-name col-md-8">
+				   <a href="/preorder/item/3SoF8WP9kt" style="color: inherit" 
+					  class="ng-binding"> {{item.title}}--Vegetarian Thali</a>
+				</div>
+				<div class="lead price-tag col-md-2">
+				   <span class="small">₹</span><strong>120</strong>
+				</div>
+			 </div>
+			 <div class="row">
+				<div class="col-md-4" style="padding-right:10px;">
+				   <img style="width: 100%; height: 100%; border-radius: 100%; border: 3px solid #4CAF50" ng-src="https://tiffinity-parse.s3.amazonaws.com/parse/6439265c1305cf85eb05d663d40abe64_nipas-cuisine-profile.jpg" src="https://tiffinity-parse.s3.amazonaws.com/parse/6439265c1305cf85eb05d663d40abe64_nipas-cuisine-profile.jpg">
+				</div>
+				<div class="item-name col-md-8" style="margin-top:20px;padding-left:0px;">
+				   <p>Nipa's Cuisine</p>
+				   <p>150ml each Dal, Rice, Sabzi, 4 Rotis</p>
+				</div>
+			 </div>
+			 <div class="row" style="margin-top: 10px;text-align: center;">
+				<a class="btn btn-primary" href="/preorder/item/3SoF8WP9kt">Order Now</a>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+ </div>
+</div>
+

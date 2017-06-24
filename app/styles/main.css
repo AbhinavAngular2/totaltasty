@@ -86,3 +86,43 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+
+.food-card {
+ padding: 0 15px 40px;
+ }
+ .item-card {
+ box-shadow: 0 3px 12px rgba(0,0,0,.11);
+ position: relative;
+ overflow: hidden;
+ }
+ .food-card .menu-pic {
+ position: relative;
+ min-height: 180px;
+ }
+ .item-card .card-details {
+ background: #fff;
+ padding: 0 13px;
+ position: relative;
+ }
+ .food-card .menu-pic img {
+ width: 100%;
+ }
+ .text-center {
+ text-align: center;
+ }
+ .text-muted {
+ color: #999;
+ }
+ .item-card .card-details .price-tag {
+ font-weight: 400;
+ font-size: 20px;
+ color: #6D6D6D;
+ margin-bottom: 15px;
+ letter-spacing: 1px;
+ }
+ .menu-container {
+ background: #E6E8EB;
+ }

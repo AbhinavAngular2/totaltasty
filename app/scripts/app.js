@@ -1,43 +1,22 @@
 'use strict';
-
-/**
- * @ngdoc overview
- * @name csetWebApp
- * @description
- * # csetWebApp
- *
- * Main module of the application.
- */
 angular
-  .module('csetWebApp', [
+  .module('totalTastyApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-	'ngCookies'
-	//'highcharts-ng'
+	'ngCookies',
+	'ngMaterial'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider) {	  
     $routeProvider
-      .when('/main', {
-        templateUrl: 'views/main.html'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-	  .when('/login', {
-        templateUrl: 'views/login.html'
-      })
-      .when('/registration', {
-        templateUrl: 'views/registration.html'
-      })
-	  .when('/contact', {
-        templateUrl: 'views/contact.html'
+      .when('/preorder/menuList', {
+        templateUrl: 'preorder/views/totalTasty.menuList.html',
+        controller: 'totalTasty.menuListCtrl'
       })
       .otherwise({
-        redirectTo: '/login'
+        redirectTo: '/preorder/menuList'
       });
   });
